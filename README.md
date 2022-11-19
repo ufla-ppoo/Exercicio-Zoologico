@@ -77,11 +77,31 @@ Teste suas implementações!
 
 Ao final, não se esqueça de fazer um commit e sincronizar suas alterações.
 
-## Parte 2 - Polimorfismo
+## Parte 2 - Diagrama de Classes UML
 
-Nesta segunda parte vamos exercitar **os conceitos de polimorfismo** e perceber como eles nos ajudam a **evitar duplicação** de código nas classes que **utilizam** classes de uma hierarquia de herança.
+Vamos agora aprender a criar **diagramas de classes UML** para nossos projetos.
 
-### Passo 2.1 - Experimentando Polimorfismo 1
+### Passo 2.1 - Diagrama de Classes Simplificado
+
+Crie um diagrama de classes simplificado para o projeto do Zoológico:
+
+- Neste tipo de diagrama, basta representar as classes (não é necessário representar atributos e nem métodos).
+
+O diagrama criado deve ser exportado para um arquivo imagem do tipo `PNG` e colocado dentro de uma pasta `doc` criada dentro da pasta principal do projeto (obs.: não crie a pasta dentro de `src`).
+
+### Passo 2.2 - Diagrama de Classes Completo
+
+*Dica: valide com o professor o diagrama do passo anterior antes de fazer o diagrama completo*
+
+Crie agora um diagrama de classe completo, incluindo os atributos e métodos de todas as classes.
+
+- Obs.: exporte o diagrama para um arquito imagem do tipo `PNG` diferente do anterior (para que seu projeto tenha os dois diagramas dentro da pasta `doc`).
+
+## Parte 3 - Polimorfismo
+
+Nesta terceira parte vamos exercitar **os conceitos de polimorfismo** e perceber como eles nos ajudam a **evitar duplicação** de código nas classes que **utilizam** classes de uma hierarquia de herança.
+
+### Passo 3.1 - Experimentando Polimorfismo 1
 
 Vamos começar exercitando nosso entendimento sobre os conceitos de polimorfismo.
 Para isso, crie uma classe chamada `Teste` com um método `main` e, dentro dele, faça o seguinte:
@@ -97,7 +117,7 @@ Explique abaixo, da forma mais completa possível, como é possível que a mesma
 
 Ao terminar, faça um commit com as alterações da classe `Teste` e as alterações neste arquivo README.
 
-### Passo 2.2 - Experimentando Polimorfismo 2
+### Passo 3.2 - Experimentando Polimorfismo 2
 
 Agora, altere o método `main` da classe `Teste` e faça o seguinte:
 - Crie um método chamado `exibirDescricaoCompleta` que recebe uma variável do tipo `Animal`.
@@ -129,7 +149,7 @@ Explique, da forma mais completa possível, como o mesmo trecho de código (mét
 
 Ao terminar, faça um novo commit com as alterações (na classe Teste e neste arquivo README).
 
-### Passo 2.3 - Usando Polimorfismo no Projeto Zoologico
+### Passo 3.3 - Usando Polimorfismo no Projeto Zoologico
 
 Vamos agora perceber como o polimorfismo ajuda a reduzir a replicação de código. 
 
@@ -145,7 +165,7 @@ Teste suas alterações!
 
 Ao final, faça um novo commit no seu repositório.
 
-### Passo 2.4 - Identificando o uso de Polimorfismo
+### Passo 3.4 - Identificando o uso de Polimorfismo
 
 Para todas as perguntas abaixo, você deve indicar exatamente a classe e o número da linha de código onde cada situação acontece.
 
@@ -187,3 +207,9 @@ Para todas as perguntas abaixo, você deve indicar exatamente a classe e o núme
 > Nome da classe:
 > 
 > Número da linha:
+
+### Passo 3.5 - Atualização do Diagrama de Classes
+
+Faça as alterações necessárias nos diagramas de classes para que eles representem o seu código alterado após o passo 2.3.
+
+
