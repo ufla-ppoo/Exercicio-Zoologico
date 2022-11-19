@@ -2,6 +2,8 @@
 
 ## Parte 1 - Herança
 
+Nesta primeira parte vamos exercitar os **conceitos básicos de herança** e ver como eles nos ajudam a **evitar duplicação de código** nas classes que **formam** uma hierarquia de herança.
+
 ### Passo 1.1 - Modelar as classes
 
 *Atenção:* Este passo não envolve implementação; deve ser respondido aqui no próprio arquivo README.
@@ -59,8 +61,8 @@ Não se esqueça de fazer um commit ao terminar esse passo.
 
 A classe deverá ter:
 
-- Uma lista para cada espécie de animal.
-   - Obs.: mesmo que já conheça polimorfismo, por objetivos didáticos, é importante que crie as listas separadas neste exercício.
+- Uma coleção (`ArrayList` ou `HashMap`) para cada espécie de animal.
+   - Obs.: mesmo que já conheça polimorfismo, por objetivos didáticos, é importante que crie coleções separadas neste exercício.
 - Métodos para adicionar cada espécie de animal.
   - Os métodos devem receber os dados necessários e dentro deles é que os objetos serão criados.
 
@@ -74,3 +76,114 @@ Você deverá **alterar a classe `InterfaceUsuario`** para que ela chame os mét
 Teste suas implementações!
 
 Ao final, não se esqueça de fazer um commit e sincronizar suas alterações.
+
+## Parte 2 - Polimorfismo
+
+Nesta segunda parte vamos exercitar **os conceitos de polimorfismo** e perceber como eles nos ajudam a **evitar duplicação** de código nas classes que **utilizam** classes de uma hierarquia de herança.
+
+### Passo 2.1 - Experimentando Polimorfismo 1
+
+Vamos começar exercitando nosso entendimento sobre os conceitos de polimorfismo.
+Para isso, crie uma classe chamada `Teste` com um método `main` e, dentro dele, faça o seguinte:
+
+- Declare uma variável chamada `animal` do tipo `Animal` e atribua a ela um objeto da classe `Leao`.
+- Chame o método `getNome` usando a variável `animal`.
+- Agora, usando a mesma variável `animal`, atribua a ela um objeto da classe `Arara`.
+- Chame o método `getNome` usando a variável criada.
+
+Explique abaixo, da forma mais completa possível, como é possível que a mesma variável `animal` possa ser usada para chamar métodos de objetos de classes diferentes.
+
+>  ... escreva aqui a sua resposta ...
+
+Ao terminar, faça um commit com as alterações da classe `Teste` e as alterações neste arquivo README.
+
+### Passo 2.2 - Experimentando Polimorfismo 2
+
+Agora, altere o método `main` da classe `Teste` e faça o seguinte:
+- Crie um método chamado `exibirDescricaoCompleta` que recebe uma variável do tipo `Animal`.
+  - Dentro dele, chame o método de descrição completa usando o parâmetro `animal`.
+  - E exiba o resultado na tela.
+- No método `main`, chame o método `exibirDescricaoCompleta` passando um objeto da classe `Tigre`.
+
+O que é exibido?
+
+>  ... escreva aqui a sua resposta ...
+
+O método de descrição completa chamado inicialmente pertence a qual classe?
+
+>  ... escreva aqui a sua resposta ...
+
+Agora chame o método `exibirDescricaoCompleta` passando um objeto da classe `Ema`.
+
+O que é exibido?
+
+>  ... escreva aqui a sua resposta ...
+
+O método de descrição completa chamado inicialmente pertence a qual classe?
+
+>  ... escreva aqui a sua resposta ...
+
+Explique, da forma mais completa possível, como o mesmo trecho de código (método `exibirDescricaoCompleta`) pode ser usado para chamar métodos de classes diferentes.
+
+>  ... escreva aqui a sua resposta ...
+
+Ao terminar, faça um novo commit com as alterações (na classe Teste e neste arquivo README).
+
+### Passo 2.3 - Usando Polimorfismo no Projeto Zoologico
+
+Vamos agora perceber como o polimorfismo ajuda a reduzir a replicação de código. 
+
+Para isso, você deve alterar a classe `Zoologico`:
+
+- Substitua as coleções de animais de cada espécie por uma única coleção (`ArrayList` ou `HashMap`) com todos os animais.
+- E, devido a essa modificação, implemente as alterações necessárias nos métodos da classe.
+
+Do ponto de vista do usuário, seu programa deverá continuar funcionando da mesma forma que você havia feito no exercício da aula anterior.
+Mas repare que agora seu projeto terá um *Design* de classes melhor.
+
+Teste suas alterações!
+
+Ao final, faça um novo commit no seu repositório.
+
+### Passo 2.4 - Identificando o uso de Polimorfismo
+
+Para todas as perguntas abaixo, você deve indicar exatamente a classe e o número da linha de código onde cada situação acontece.
+
+1. Indique pelo menos uma **variável polimórfica** utilizada no seu código e explique porque ela é uma variável polimórfica.
+
+> Nome da classe:
+> 
+> Número da linha:
+> 
+> Nome da variável:
+> 
+> Explicação:
+
+
+2. Identifique algum ponto no código onde está sendo usado o **princípio da substituição** e explique o que é este princípio.
+
+> Nome da classe:
+> 
+> Número da linha:
+> 
+> Explicação:
+
+
+3. Identifique algum ponto no código onde uma variável tem **tipo estático diferente de seu tipo dinâmico** (indique quais são os tipos estático e dinâmico da variável neste ponto).
+
+> Nome da classe:
+> 
+> Número da linha:
+> 
+> Nome da variável:
+> 
+> Tipo estático:
+>
+> Tipo dinâmico:
+
+
+4. Identifique onde ocorre uma chamada de método na qual seja utilizado o conceito de **polimorfismo de método**.
+
+> Nome da classe:
+> 
+> Número da linha:
