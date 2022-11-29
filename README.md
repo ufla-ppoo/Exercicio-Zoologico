@@ -31,7 +31,7 @@ Dicas:
 - Avalie cuidadosamente os atributos a serem definidos, evitando replicação de código.
 - Lembre-se que suas classes não devem permitir que um programador crie objetos de animais que não façam sentido.
   - Por exemplo: não faz sentido criar uma ema com três pernas, ou que faça "au au".
-  - Portanto, avalie bem como os atributos devem ser inicializados.
+  - Portanto, avalie bem como os atributos devem ser inicializados (e quais classes precisam ser criadas).
 - Uma classe que representa uma espécie de animal deve ter nome no singular, já que um objeto dessa classe representará um único animal.
   - Por exemplo, uma classe para representar um gorila deveria ser chamar `Gorila`, e não `Gorilas`.
 
@@ -39,7 +39,7 @@ Dicas:
 >
 > Exemplo de formato:
 > 
-> Classe A - Atributos: atr1, atr2 e atr3 - Métodos: metodoA, metodoB e metodoC
+> Classe A (herda de B) - Atributos: atr1, atr2 e atr3 - Métodos: metodoA, metodoB e metodoC
 
 ### Passo 1.2 - Implementar a Hierarquia de Herança
 
