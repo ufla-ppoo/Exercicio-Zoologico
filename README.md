@@ -8,7 +8,7 @@ Nesta primeira parte vamos exercitar os **conceitos básicos de herança** e ver
 
 *Atenção:* Este passo não envolve implementação; deve ser respondido aqui no próprio arquivo README.
 
-Suponha que queiramos criar um sistema para um Zoológico que precise tratar as seguintes espécies de animais: leão, elefante, ema e arara.
+Suponha que queiramos criar um sistema para um Zoológico que precise tratar as seguintes espécies de animais: leão, gorila, ema e arara.
 
 - Sabe-se que todos os animais têm as seguintes características: um nome, uma espécie, uma determinada quantidade de patas e um som característico (ex: se fosse um gato, seria “miau”, se fosse uma galinha: “cocorico”).
 - Além disso, os animais que possuem pelo têm a informação da cor do seu pelo; já os animais que voam têm a informação se voam bem ou voam mal.
