@@ -21,6 +21,7 @@ O sistema deve possuir:
   - `Blue é uma arara`.
 - Método que retorne uma string com a descrição completa de um animal, como a do exemplo abaixo: 
   - `Simba é um leão que faz roarrr e tem pelo laranja`.
+  - `Blue é uma arara que faz reco-reco e voa bem`.
 
 Neste passo você deve apenas **modelar as classes necessárias** para representar todos os animais utilizando o conceito de herança:
 
