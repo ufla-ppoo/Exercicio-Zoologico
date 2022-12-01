@@ -17,11 +17,11 @@ O sistema deve possuir:
 
 - Métodos para consulta de cada atributo de todos os animais.
 - Método que retorne uma string com a descrição resumida de um animal, conforme os exemplos abaixo: 
-  - `Simba é um leão`.
-  - `Blue é uma arara`.
+  - `Simba é um(a) leão`.
+  - `Blue é um(a) arara`.
 - Método que retorne uma string com a descrição completa de um animal, como a do exemplo abaixo: 
-  - `Simba é um leão que faz roarrr e tem pelo laranja`.
-  - `Blue é uma arara que faz reco-reco e voa bem`.
+  - `Simba é um(a) leão que faz roarrr e tem pelo laranja`.
+  - `Blue é um(a) arara que faz reco-reco e voa bem`.
 
 Neste passo você deve apenas **modelar as classes necessárias** para representar todos os animais utilizando o conceito de herança:
 
