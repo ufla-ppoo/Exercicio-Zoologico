@@ -124,7 +124,7 @@ Agora, altere o método `main` da classe `Teste` e faça o seguinte:
 - Crie um método chamado `exibirDescricaoCompleta` que recebe uma variável do tipo `Animal`.
   - Dentro dele, chame o método de descrição completa usando o parâmetro `animal`.
   - E exiba o resultado na tela.
-- No método `main`, chame o método `exibirDescricaoCompleta` passando um objeto da classe `Tigre`.
+- No método `main`, chame o método `exibirDescricaoCompleta` passando um objeto da classe `Leao`.
 
 O que é exibido?
 
