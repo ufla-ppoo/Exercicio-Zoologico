@@ -213,4 +213,7 @@ Para todas as perguntas abaixo, você deve indicar exatamente a classe e o núme
 
 Faça as alterações necessárias nos diagramas de classes para que eles representem o seu código alterado após o passo 2.3.
 
+Obs.: não é necessário incluir a classe `Teste`.
+
+>  Dica: Cuidado com linhas se cruzando no diagrama de classes, pois podem confundir os relacionamentos.
 
