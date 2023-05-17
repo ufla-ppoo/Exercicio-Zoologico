@@ -8,7 +8,7 @@ Nesta primeira parte vamos exercitar os **conceitos básicos de herança** e ver
 
 *Atenção:* Este passo não envolve implementação; deve ser respondido aqui no próprio arquivo README.
 
-Suponha que queiramos criar um sistema para um Zoológico que precise tratar as seguintes espécies de animais: leão, gorila, ema e arara.
+Suponha que queiramos criar um sistema para um Zoológico que precise tratar as seguintes espécies de animais: tigre, chimpanzé, avestruz e tucano.
 
 - Sabe-se que todos os animais têm as seguintes características: um nome, uma espécie, uma determinada quantidade de patas e um som característico (tecnicamente, sua onomatopeia, ex: se fosse um gato, seria “miau”, se fosse uma galinha: “cocorico”).
 - Além disso, os animais que possuem pelo têm a informação da cor do seu pelo; já os animais que voam têm a informação se voam bem ou voam mal.
@@ -17,11 +17,11 @@ O sistema deve possuir:
 
 - Métodos para consulta de cada atributo de todos os animais.
 - Método que retorne uma string com a descrição resumida de um animal, conforme os exemplos abaixo: 
-  - `Simba é um(a) leão`.
-  - `Blue é um(a) arara`.
+  - `Simba é um(a) tigre`.
+  - `Blue é um(a) tucano`.
 - Método que retorne uma string com a descrição completa de um animal, como a do exemplo abaixo: 
-  - `Simba é um(a) leão que faz roarrr e tem pelo laranja`.
-  - `Blue é um(a) arara que faz reco-reco e voa bem`.
+  - `Simba é um(a) tigre que faz grrrr e tem pelo laranja`.
+  - `Blue é um(a) tucano que faz tuc-tuc e voa bem`.
 
 Neste passo você deve apenas **modelar as classes necessárias** para representar todos os animais utilizando o conceito de herança:
 
@@ -31,10 +31,10 @@ Neste passo você deve apenas **modelar as classes necessárias** para represent
 Dicas:
 - Avalie cuidadosamente os atributos a serem definidos, evitando replicação de código.
 - Lembre-se que suas classes não devem permitir que um programador crie objetos de animais que não façam sentido.
-  - Por exemplo: não faz sentido criar uma ema com três pernas, ou que faça "au au".
+  - Por exemplo: não faz sentido criar um avestruz com três pernas, ou que faça "au au".
   - Portanto, avalie bem como os atributos devem ser inicializados (e quais classes precisam ser criadas).
 - Uma classe que representa uma espécie de animal deve ter nome no singular, já que um objeto dessa classe representará um único animal.
-  - Por exemplo, uma classe para representar um gorila deveria ser chamar `Gorila`, e não `Gorilas`.
+  - Por exemplo, uma classe para representar um chimpanzé deveria se chamar `Chimpanze`, e não `Chimpanzes`.
 
 > Escreva aqui sua resposta
 >
@@ -64,7 +64,7 @@ A classe deverá ter:
 
 - Uma coleção (`ArrayList` ou `HashMap`) para cada espécie de animal.
    - Obs.: mesmo que já conheça polimorfismo, por objetivos didáticos, é importante que crie coleções separadas neste exercício.
-- Métodos para adicionar cada espécie de animal.
+- Métodos para adicionar animais de cada espécie de animal.
   - Os métodos devem receber os dados necessários e dentro deles é que os objetos serão criados.
 
 - Método que recebe o nome de um animal e retorna sua descrição completa.
@@ -107,9 +107,9 @@ Nesta terceira parte vamos exercitar **os conceitos de polimorfismo** e perceber
 Vamos começar exercitando nosso entendimento sobre os conceitos de polimorfismo.
 Para isso, crie uma classe chamada `Teste` com um método `main` e, dentro dele, faça o seguinte:
 
-- Declare uma variável chamada `animal` do tipo `Animal` e atribua a ela um objeto da classe `Leao`.
+- Declare uma variável chamada `animal` do tipo `Animal` e atribua a ela um objeto da classe `Tigre`.
 - Chame o método `getNome` usando a variável `animal`.
-- Agora, usando a mesma variável `animal`, atribua a ela um objeto da classe `Arara`.
+- Agora, usando a mesma variável `animal`, atribua a ela um objeto da classe `Tucano`.
 - Chame o método `getNome` usando a variável criada.
 
 Explique abaixo, da forma mais completa possível, como é possível que a mesma variável `animal` possa ser usada para chamar métodos de objetos de classes diferentes.
@@ -124,7 +124,7 @@ Agora, altere o método `main` da classe `Teste` e faça o seguinte:
 - Crie um método chamado `exibirDescricaoCompleta` que recebe uma variável do tipo `Animal`.
   - Dentro dele, chame o método de descrição completa usando o parâmetro `animal`.
   - E exiba o resultado na tela.
-- No método `main`, chame o método `exibirDescricaoCompleta` passando um objeto da classe `Leao`.
+- No método `main`, chame o método `exibirDescricaoCompleta` passando um objeto da classe `Tigre`.
 
 O que é exibido?
 
@@ -134,7 +134,7 @@ O método de descrição completa chamado inicialmente pertence a qual classe?
 
 >  ... escreva aqui a sua resposta ...
 
-Agora chame o método `exibirDescricaoCompleta` passando um objeto da classe `Ema`.
+Agora chame o método `exibirDescricaoCompleta` passando um objeto da classe `Avestruz`.
 
 O que é exibido?
 
