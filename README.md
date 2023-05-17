@@ -158,6 +158,7 @@ Para isso, você deve alterar a classe `Zoologico`:
 
 - Substitua as coleções de animais de cada espécie por uma única coleção (`ArrayList` ou `HashMap`) com todos os animais.
 - E, devido a essa modificação, implemente as alterações necessárias nos métodos da classe.
+- **Atenção**: deixe o código anterior comentado para que o professo consiga corrigir a Parte 1 e a Parte 3 do seu exercício.
 
 Do ponto de vista do usuário, seu programa deverá continuar funcionando da mesma forma que você havia feito no exercício da aula anterior.
 Mas repare que agora seu projeto terá um *Design* de classes melhor.
