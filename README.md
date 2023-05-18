@@ -82,13 +82,15 @@ Ao final, não se esqueça de fazer um commit e sincronizar suas alterações.
 
 Vamos agora aprender a criar **diagramas de classes UML** para nossos projetos.
 
+**Importante**: nesse exercício nós vamos fazer o inverso do que seria ideal, pois nós vamos criar um Diagrama de Classes depois de já ter implementado o código.
+Vamos fazer isso para que seja mais simples entender como fazer um diagrama.
+Mas o correto na verdade seria primeiro pensar na modelagem e fazer o Diagrama de Classes para depois implementar o código.
+
 ### Passo 2.1 - Diagrama de Classes Simplificado
 
-Crie um diagrama de classes simplificado para o projeto do Zoológico:
+Crie um diagrama de classes simplificado para o projeto do Zoológico (veja dicas sobre como fazer mais abaixo):
 
 - Neste tipo de diagrama, basta representar as classes (não é necessário representar atributos e nem métodos).
-
-O diagrama criado deve ser exportado para um arquivo imagem do tipo `PNG` e colocado dentro de uma pasta `doc` criada dentro da pasta principal do projeto (obs.: não crie a pasta dentro de `src`).
 
 ### Passo 2.2 - Diagrama de Classes Completo
 
@@ -96,7 +98,34 @@ O diagrama criado deve ser exportado para um arquivo imagem do tipo `PNG` e colo
 
 Crie agora um diagrama de classe completo, incluindo os atributos e métodos de todas as classes.
 
-- Obs.: exporte o diagrama para um arquito imagem do tipo `PNG` diferente do anterior (para que seu projeto tenha os dois diagramas dentro da pasta `doc`).
+#### Dicas para fazer o Diagrama de Classes UML
+
+Para fazer o diagrama você pode optar por usar:
+
+- um software qualquer (como o `Dia`).
+- ou um algum editor online como o https://www.diagrameditor.com/
+- ou ainda usar o `Mermaid` que permite fazer o diagrama aqui mesmo, diretamente no arquivo README do projeto.
+
+Caso use um software ou um editor online, exporte a modelagem para uma imagem no formato `png` e coloque o arquivo em uma pasta `doc` dentro da pasta principal do projeto.
+
+Já o `Mermaid` é interessante pois o GitHub possui uma integração com ele que permite exibir um diagrama de classes UML em um arquivo Markdown, como este arquivo README.
+Para isso, basta "escrever" o diagrama de classes usando a [sintaxe](https://mermaid.js.org/syntax/classDiagram.html) do `Mermaid`, como no exemplo abaixo.
+
+> Obs.: Para que você consiga visualizar o Diagrama de Classes dentro do VS Code, instale a extensão `Markdown Preview Mermaid Support` e acesse a visualização do arquivo README.md (atalho Ctrl+Shift+V).
+
+```mermaid
+classDiagram
+    App --> Classe A
+    ClasseA *-- ClasseB
+    ClasseA o-- ClasseC
+    ClasseB -- ClasseD
+    class ClasseA{
+        -atributoInteiro: int
+        +ClasseA(int)
+        +metodoX() boolean
+        +metodoY(String) void
+    }
+```
 
 ## Parte 3 - Polimorfismo
 
