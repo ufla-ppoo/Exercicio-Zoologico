@@ -247,3 +247,15 @@ Obs.: não é necessário incluir a classe `Teste`.
 
 >  Dica: Cuidado com linhas se cruzando no diagrama de classes, pois podem confundir os relacionamentos.
 
+## (Opcional) Parte 4 - Persistência em arquivo
+
+Uma boa forma de praticar a persistência em arquivo em Java é incluir neste projeto a peristência dos dados em arquivo.
+A ideia seria salvar os dados toda vez que o programa é fechado e carregá-los quando o programa é aberto.
+Dessa forma, não precisaríamos cadastrar novamente os animais toda vez que o programa é iniciado.
+
+Você pode fazer isso usando arquivos de texto ou arquivo binário.
+
+Lembre-se:
+- De criar uma classe específica para tratar a persistência dos dados (representando a camada de acesso a dados).
+- E que essa nova classe não deve chamar métodos das classes Zoologico e nem InterfaceUsuario.
+
