@@ -88,15 +88,16 @@ Mas o correto na verdade seria primeiro pensar na modelagem e fazer o Diagrama d
 
 ### Passo 2.1 - Diagrama de Classes Simplificado
 
-Crie um diagrama de classes simplificado para o projeto do Zoológico (veja dicas sobre como fazer mais abaixo):
+Crie um diagrama de classes **simplificado** para o projeto do Zoológico (veja dicas sobre como fazer mais abaixo):
 
 - Neste tipo de diagrama, basta representar as classes (não é necessário representar atributos e nem métodos).
+- O diagrama deve apresentar todas as classes do sistema, inclusive as classes `App` e `InterfaceUsuario`.
 
 ### Passo 2.2 - Diagrama de Classes Completo
 
 *Dica: valide com o professor o diagrama do passo anterior antes de fazer o diagrama completo*
 
-Crie agora um diagrama de classe completo, incluindo os atributos e métodos de todas as classes.
+Crie agora um diagrama de classes **completo**, incluindo os atributos e métodos de todas as classes.
 
 #### Dicas para fazer o Diagrama de Classes UML
 
