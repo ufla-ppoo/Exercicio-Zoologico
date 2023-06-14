@@ -74,6 +74,9 @@ A classe deverá ter:
 O código inicial de uma classe `InterfaceUsuario`, que implementa o menu de opções para o usuário do programa, já foi fornecido para você.
 Você deverá **alterar a classe `InterfaceUsuario`** para que ela chame os métodos da sua classe `Zoológico` (e obtenha dados do usuário, quando necessário).
 
+Lembre-se que, pela divisão de camadas, a classe `Zoologico` não deve ter nenhuma interação com o usuário.
+Assim todas as exibições de dados no terminal e obtenção de dados do usuário deve ser feita na classe `InterfaceUsuario`.
+
 Teste suas implementações!
 
 Ao final, não se esqueça de fazer um commit e sincronizar suas alterações.
@@ -88,10 +91,13 @@ Mas o correto na verdade seria primeiro pensar na modelagem e fazer o Diagrama d
 
 ### Passo 2.1 - Diagrama de Classes Simplificado
 
-Crie um diagrama de classes **simplificado** para o projeto do Zoológico (veja dicas sobre como fazer mais abaixo):
+Crie um **diagrama de classes simplificado** para o projeto do Zoológico (veja dicas sobre como fazer mais abaixo).
 
 - Neste tipo de diagrama, basta representar as classes (não é necessário representar atributos e nem métodos).
 - O diagrama deve apresentar todas as classes do sistema, inclusive as classes `App` e `InterfaceUsuario`.
+
+**Atenção**: o seu diagrama deve estar de acordo com o código que você implementou.
+Portanto, os tipos de relacionamento não devem ser avaliados pensando-se apenas nos nomes das classes, mas, sim, em como o código foi efetivamente implementado.
 
 ### Passo 2.2 - Diagrama de Classes Completo
 
